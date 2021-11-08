@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <title>Responsive Bootstrap Webpage</title>
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <nav
+      class="fixed-top navbar navbar-dark navbar-expand-lg bg-dark"
+      id="backtotop"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Carousel</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/2.jpg" class="d-block w-100 vh-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="fs-1">Another example headline.</h5>
+            <p>
+              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
+              id elit non mi porta gravida at eget metus. Nullam id dolor id
+              nibh ultricies vehicula ut id elit.
+            </p>
+            <button type="button" class="btn btn-primary mb-5 btn-lg">
+              Learn More
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./images/1.jpg" class="d-block w-100 vh-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block text-end">
+            <h5 class="fs-1">One more for good measure.</h5>
+            <p>
+              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
+              id elit non mi porta gravida at eget metus. Nullam id dolor id
+              nibh ultricies vehicula ut id elit.
+            </p>
+            <button type="button" class="btn btn-primary mb-5 btn-lg">
+              Browse Gallery
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./images/3.jpg" class="d-block w-100 vh-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block text-start">
+            <h5 class="fs-1">Example headline.</h5>
+            <p>
+              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
+              id elit non mi porta gravida at eget metus. Nullam id dolor id
+              nibh ultricies vehicula ut id elit.
+            </p>
+            <button type="button" class="btn btn-primary mb-5 btn-lg">
+              Sign up today
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- cards -->
+
+    <div class="row justify-content-center">
+      <!-- card 1 -->
+      <div class="m-5" style="width: 18rem">
+        <img
+          src="./images/4.jpg"
+          class="card-img-top mx-auto d-block m-2 rounded-circle"
+          alt="..."
+          style="width: 200px; height: 200px"
+        />
+        <div class="card-body text-center">
+          <h2 class="card-title">Heading</h2>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="m-5" style="width: 18rem">
+        <img
+          src="./images/5.jpg"
+          class="card-img-top mx-auto d-block m-2 rounded-circle"
+          alt="..."
+          style="width: 200px; height: 200px"
+        />
+        <div class="card-body text-center">
+          <h2 class="card-title">Heading</h2>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+
+      <!-- card 3 -->
+      <div class="m-5" style="width: 18rem">
+        <img
+          src="./images/7.jpg"
+          class="card-img-top mx-auto d-block m-2 rounded-circle"
+          alt="..."
+          style="width: 200px; height: 200px"
+        />
+        <div class="card-body text-center">
+          <h2 class="card-title">Heading</h2>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flower section -->
+    <section class="container mt-5">
+      <hr />
+
+      <!-- Flower 1 -->
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 my-auto order-md-first order-last">
+          <h2>First featurette heading. It’ll blow your mind.</h2>
+          <p>
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+            ligula porta felis euismod semper. Praesent commodo cursus magna,
+            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+            commodo.
+          </p>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 p-md-1 position-relative">
+          <img
+            class="d-block mx-auto img-thumbnail mt-3 mb-3"
+            src="./images/5.jpg"
+            alt="Flower 5"
+            style="object-fit: cover"
+          />
+
+          <p class="carousel-caption fs-1" style="margin-bottom: 100px">
+            Lorem ipsum
+          </p>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Flower 2 -->
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 my-auto order-md-1 order-last">
+          <h2>Oh yeah, it’s that good. See for yourself.</h2>
+          <p>
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+            ligula porta felis euismod semper. Praesent commodo cursus magna,
+            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+            commodo.
+          </p>
+        </div>
+
+        <div class="col-sm-12 col-lg-6">
+          <img
+            class="d-block mx-auto img-thumbnail mt-3 mb-3"
+            src="./images/6.jpg"
+            alt="Flower 6"
+            style="object-fit: cover"
+          />
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Flower 3 -->
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 my-auto order-md-first order-last">
+          <h2>And lastly, this one. Checkmate.</h2>
+          <p>
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+            ligula porta felis euismod semper. Praesent commodo cursus magna,
+            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+            commodo.
+          </p>
+        </div>
+
+        <div class="col-sm-12 col-lg-6">
+          <img
+            class="d-block mx-auto img-thumbnail mt-3 mb-3"
+            src="./images/7.jpg"
+            alt="Flower 7"
+            style="object-fit: cover"
+          />
+        </div>
+      </div>
+
+      <hr />
+    </section>
+
+    <!-- footer -->
+
+    <footer
+      class="
+        container
+        d-flex
+        flex-row
+        justify-content-between
+        align-items-center
+        mt-5
+        mb-5
+      "
+    >
+      <p class="mb-0">
+        &copy; 2017-2019 Company, Inc. <a href="#privacyterms">Privacy Terms</a>
+      </p>
+      <a href="#backtotop">Back to top</a>
+    </footer>
+
+    <!-- JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
